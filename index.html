@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pawankumar N | Portfolio</title>
 
-<meta name="description" content="Pawankumar N – Full Stack Developer, Machine Learning Enthusiast, UI/UX Focused Engineer">
+<meta name="description" content="Pawankumar N – Full Stack Developer | ML Enthusiast | UI/UX Focused Engineer">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -188,14 +188,60 @@ nav a{
   margin:4px 4px 0 0;
 }
 
-/* TIMELINE */
-.timeline{
-  border-left:3px solid var(--accent);
-  padding-left:25px;
+/* EDUCATION TIMELINE */
+.edu-timeline{
+  position:relative;
+  padding-left:30px;
 }
 
-.timeline-item{
-  margin-bottom:25px;
+.edu-timeline::before{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:var(--accent);
+  border-radius:5px;
+}
+
+.edu-item{
+  position:relative;
+  margin-bottom:35px;
+}
+
+.edu-item::before{
+  content:"";
+  position:absolute;
+  left:-2px;
+  top:6px;
+  width:16px;
+  height:16px;
+  background:var(--bg);
+  border:3px solid var(--accent);
+  border-radius:50%;
+}
+
+.edu-degree{
+  font-weight:600;
+  font-size:1rem;
+}
+
+.edu-inst{
+  font-size:0.9rem;
+  color:var(--muted);
+  margin:4px 0;
+}
+
+.edu-meta{
+  font-size:0.85rem;
+  color:var(--muted);
+}
+
+.edu-score{
+  margin-top:6px;
+  font-size:0.9rem;
+  font-weight:500;
 }
 
 /* CONTACT */
@@ -274,7 +320,6 @@ footer{
 <!-- SKILLS -->
 <section id="skills">
 <h2>Technical Skills</h2>
-
 <div class="grid grid-3">
 
 <div class="card">
@@ -291,8 +336,8 @@ footer{
 <div class="card">
 <h3>Web & Backend</h3>
 <div class="skills-icons">
-  <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
-  <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+  <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+  <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
   <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
   <div class="skill-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
 </div>
@@ -357,26 +402,35 @@ footer{
 <!-- EDUCATION -->
 <section id="education">
 <h2>Education</h2>
-<div class="card timeline">
 
-<div class="timeline-item">
-<strong>MCA – Alliance University, Bangalore</strong><br>
-2025 • SGPA: 9.25 (Sem 1), 9.2 (Sem 2)
+<div class="card edu-timeline">
+
+<div class="edu-item">
+  <div class="edu-degree">Master of Computer Applications (MCA)</div>
+  <div class="edu-inst">Alliance University, Bangalore</div>
+  <div class="edu-meta">2024 – 2025</div>
+  <div class="edu-score">SGPA: 9.25 (Sem 1), 9.2 (Sem 2)</div>
 </div>
 
-<div class="timeline-item">
-<strong>BCA – Vijaya College, Bangalore</strong><br>
-2024 • CGPA: 8.7
+<div class="edu-item">
+  <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+  <div class="edu-inst">Vijaya College, Bangalore</div>
+  <div class="edu-meta">2021 – 2024</div>
+  <div class="edu-score">CGPA: 8.7</div>
 </div>
 
-<div class="timeline-item">
-<strong>HSC – Swamy Vivekanandha Vidhyalaya</strong><br>
-2021 • 86%
+<div class="edu-item">
+  <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+  <div class="edu-inst">Swamy Vivekanandha Vidhyalaya Mat. Hr. Sec. School</div>
+  <div class="edu-meta">2021</div>
+  <div class="edu-score">Percentage: 86%</div>
 </div>
 
-<div class="timeline-item">
-<strong>SSLC – Swamy Vivekanandha Vidhyalaya</strong><br>
-2019 • 79%
+<div class="edu-item">
+  <div class="edu-degree">Secondary School Leaving Certificate (SSLC)</div>
+  <div class="edu-inst">Swamy Vivekanandha Vidhyalaya Mat. Hr. Sec. School</div>
+  <div class="edu-meta">2019</div>
+  <div class="edu-score">Percentage: 79%</div>
 </div>
 
 </div>
